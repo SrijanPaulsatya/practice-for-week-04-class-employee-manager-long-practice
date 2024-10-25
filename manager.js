@@ -1,7 +1,7 @@
 const Employee = require("./employee");
 
 class Manager extends Employee {
-	constructor(name, title, salary, manager = null, employees) {
+	constructor(name, title, salary, manager = null) {
 		super(name, title, salary, manager);
 		this.employees = [];
 	}
@@ -13,4 +13,3 @@ class Manager extends Employee {
 }
 
 module.exports = Manager;
-
