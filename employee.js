@@ -1,5 +1,5 @@
 class Employee {
-	constructor (name, title, salary, manager = null) {
+	constructor (name, salary, title, manager = null) {
 		this.name = name;
 		this.title = title;
 		this.salary = salary;
@@ -8,6 +8,10 @@ class Employee {
 		if (manager) {
 			this.manager.addEmployee(this);
 		}
+	}
+
+	calculateBonus(multiplier) {
+		return this.salary * multiplier;
 	}
 }
 
